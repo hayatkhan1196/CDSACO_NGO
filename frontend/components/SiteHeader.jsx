@@ -57,6 +57,13 @@ const menuItems = [
       ["Our Location", "/contact"],
     ],
   },
+  {
+    label: "Admin",
+    dropdown: [
+      ["Admin Panel", "/admin"],
+   
+    ],
+  },
 ];
 
 export default function SiteHeader() {
