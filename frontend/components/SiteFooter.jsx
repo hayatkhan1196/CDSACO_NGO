@@ -1,6 +1,7 @@
 
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function SiteFooter() {
@@ -11,17 +12,15 @@ export default function SiteFooter() {
       ========================== */}
       <div className="footer-main">
         <div className="footer-container">
-
           {/* LOGO + SOCIAL */}
           <div className="footer-brand">
-
-            <Link href="/">
-              <img
-                src="/images/logo.png"
-                alt="Afghan Youth Services Organization (AYSO)"
-                className="footer-logo"
-              />
-            </Link>
+            <Image
+              src="/images/logo.png"
+              alt="Afghan Youth Services Organization (AYSO)"
+              width={48}
+              height={48}
+              priority
+            />
 
             <p className="footer-tagline">
               We strive to work towards
@@ -73,7 +72,6 @@ export default function SiteFooter() {
                   />
                 </svg>
               </a>
-
               {/* LinkedIn */}
               <a href="#" aria-label="LinkedIn">
                 <svg viewBox="0 0 24 24">
@@ -103,10 +101,8 @@ export default function SiteFooter() {
                   />
                 </svg>
               </a>
-
             </div>
           </div>
-
 
           {/* ABOUT US */}
           <div className="footer-column">
@@ -180,13 +176,13 @@ export default function SiteFooter() {
               </span>
 
               <span>
-                Zone 4th,  
+                Zone 4th,
                 <br />
-               Near to UNICEF OFFICE,
+                Near to UNICEF OFFICE,
                 <br />
-               Jalalabad City,
+                Jalalabad City,
                 <br />
-                 Afghanistan
+                Afghanistan
               </span>
             </div>
 
@@ -202,7 +198,7 @@ export default function SiteFooter() {
               </span>
 
               <a href="tel:0202205107">
-                 0093777641457  0093700641457
+                0093777641457  0093700641457
               </a>
 
             </div>
@@ -225,7 +221,7 @@ export default function SiteFooter() {
               </span>
 
               <a href="mailto:info@ayso.org.af">
-            info@cdsaco.org
+                info@cdsaco.org
               </a>
 
             </div>
